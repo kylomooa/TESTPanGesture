@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "hitTestViewController.h"
 #import "bezierPathHiteTestViewController.h"
+#import "panGestureViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -34,7 +35,7 @@
 
 //MARK: - tableView dataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -45,6 +46,8 @@
         cell.textLabel.text = @"响应者链";
     }else if(indexPath.row == 1){
         cell.textLabel.text = @"CAShapeLayer 绘制图形的点击事件判断";
+    }else if(indexPath.row == 2){
+        cell.textLabel.text = @"panGesture滑动动画";
     }
     
     return cell;
@@ -64,6 +67,11 @@
     }else if (indexPath.row == 1){
         bezierPathHiteTestViewController *vc = [[bezierPathHiteTestViewController alloc]init];
         [self presentViewController:vc animated:YES completion:nil];
+    }else if (indexPath.row == 2){
+        
+        panGestureViewController *vc = [[panGestureViewController alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+        [self presentViewController:nav animated:YES completion:nil];
     }
 }
 

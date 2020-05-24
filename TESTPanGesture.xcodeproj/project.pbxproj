@@ -16,6 +16,10 @@
 		CF2CFFFD246E967B004944D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2CFFFC246E967B004944D9 /* Assets.xcassets */; };
 		CF95C8B22479795600A96993 /* hitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8B12479795500A96993 /* hitTestViewController.m */; };
 		CF95C8B524797ACE00A96993 /* bezierPathHiteTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8B424797ACE00A96993 /* bezierPathHiteTestViewController.m */; };
+		CF95C8B8247980E800A96993 /* panGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8B7247980E800A96993 /* panGestureViewController.m */; };
+		CF95C8BE247981AF00A96993 /* panGestureLayerAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8BD247981AF00A96993 /* panGestureLayerAnimationView.m */; };
+		CFADBBCC247A1010008D3A11 /* progressControlAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFADBBCB247A1010008D3A11 /* progressControlAnimationView.m */; };
+		CFADBBCF247A493E008D3A11 /* pauseAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFADBBCE247A493E008D3A11 /* pauseAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,14 @@
 		CF95C8B12479795500A96993 /* hitTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hitTestViewController.m; sourceTree = "<group>"; };
 		CF95C8B324797ACE00A96993 /* bezierPathHiteTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bezierPathHiteTestViewController.h; sourceTree = "<group>"; };
 		CF95C8B424797ACE00A96993 /* bezierPathHiteTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bezierPathHiteTestViewController.m; sourceTree = "<group>"; };
+		CF95C8B6247980E800A96993 /* panGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = panGestureViewController.h; sourceTree = "<group>"; };
+		CF95C8B7247980E800A96993 /* panGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = panGestureViewController.m; sourceTree = "<group>"; };
+		CF95C8BC247981AF00A96993 /* panGestureLayerAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = panGestureLayerAnimationView.h; path = TESTPanGesture/panGestureLayerAnimationView.h; sourceTree = SOURCE_ROOT; };
+		CF95C8BD247981AF00A96993 /* panGestureLayerAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = panGestureLayerAnimationView.m; path = TESTPanGesture/panGestureLayerAnimationView.m; sourceTree = SOURCE_ROOT; };
+		CFADBBCA247A1010008D3A11 /* progressControlAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = progressControlAnimationView.h; sourceTree = "<group>"; };
+		CFADBBCB247A1010008D3A11 /* progressControlAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = progressControlAnimationView.m; sourceTree = "<group>"; };
+		CFADBBCD247A493E008D3A11 /* pauseAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pauseAnimationView.h; sourceTree = "<group>"; };
+		CFADBBCE247A493E008D3A11 /* pauseAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pauseAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +85,9 @@
 				CF2CFFF4246E9678004944D9 /* SceneDelegate.m */,
 				CF2CFFF6246E9678004944D9 /* ViewController.h */,
 				CF2CFFF7246E9678004944D9 /* ViewController.m */,
-				CF95C8B02479795500A96993 /* hitTestViewController.h */,
-				CF95C8B12479795500A96993 /* hitTestViewController.m */,
-				CF95C8B324797ACE00A96993 /* bezierPathHiteTestViewController.h */,
-				CF95C8B424797ACE00A96993 /* bezierPathHiteTestViewController.m */,
+				CF95C8B92479817300A96993 /* hitTest */,
+				CF95C8BA2479818200A96993 /* bezierPathHiteTest */,
+				CF95C8BB2479819700A96993 /* panGestureTest */,
 				CF2CFFF9246E9678004944D9 /* Main.storyboard */,
 				CF2CFFFC246E967B004944D9 /* Assets.xcassets */,
 				CF2CFFFE246E967B004944D9 /* LaunchScreen.storyboard */,
@@ -84,6 +95,39 @@
 				CF2C0002246E967B004944D9 /* main.m */,
 			);
 			path = TESTPanGesture;
+			sourceTree = "<group>";
+		};
+		CF95C8B92479817300A96993 /* hitTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF95C8B02479795500A96993 /* hitTestViewController.h */,
+				CF95C8B12479795500A96993 /* hitTestViewController.m */,
+			);
+			path = hitTest;
+			sourceTree = "<group>";
+		};
+		CF95C8BA2479818200A96993 /* bezierPathHiteTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF95C8B324797ACE00A96993 /* bezierPathHiteTestViewController.h */,
+				CF95C8B424797ACE00A96993 /* bezierPathHiteTestViewController.m */,
+			);
+			path = bezierPathHiteTest;
+			sourceTree = "<group>";
+		};
+		CF95C8BB2479819700A96993 /* panGestureTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF95C8B6247980E800A96993 /* panGestureViewController.h */,
+				CF95C8B7247980E800A96993 /* panGestureViewController.m */,
+				CF95C8BC247981AF00A96993 /* panGestureLayerAnimationView.h */,
+				CF95C8BD247981AF00A96993 /* panGestureLayerAnimationView.m */,
+				CFADBBCA247A1010008D3A11 /* progressControlAnimationView.h */,
+				CFADBBCB247A1010008D3A11 /* progressControlAnimationView.m */,
+				CFADBBCD247A493E008D3A11 /* pauseAnimationView.h */,
+				CFADBBCE247A493E008D3A11 /* pauseAnimationView.m */,
+			);
+			path = panGestureTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2CFFF8246E9678004944D9 /* ViewController.m in Sources */,
+				CF95C8B8247980E800A96993 /* panGestureViewController.m in Sources */,
 				CF95C8B22479795600A96993 /* hitTestViewController.m in Sources */,
 				CF2CFFF2246E9678004944D9 /* AppDelegate.m in Sources */,
+				CFADBBCF247A493E008D3A11 /* pauseAnimationView.m in Sources */,
+				CF95C8BE247981AF00A96993 /* panGestureLayerAnimationView.m in Sources */,
+				CFADBBCC247A1010008D3A11 /* progressControlAnimationView.m in Sources */,
 				CF2C0003246E967B004944D9 /* main.m in Sources */,
 				CF95C8B524797ACE00A96993 /* bezierPathHiteTestViewController.m in Sources */,
 				CF2CFFF5246E9678004944D9 /* SceneDelegate.m in Sources */,

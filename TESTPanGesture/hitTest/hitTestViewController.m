@@ -98,24 +98,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGesture:)];
-    UIPanGestureRecognizer *redPanGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(redPanGesture:)];
 
-//    [self.view addGestureRecognizer:panGesture];
-    [self.redView addGestureRecognizer:redPanGesture];
     [self.view addSubview:self.redView];
     [self.view addSubview:self.blueView];
 //    [self.view bringSubviewToFront:self.redView];
 
-}
-
--(void)panGesture:(UIPanGestureRecognizer *)pan{
-    NSLog(@"panGesture");
-}
-
--(void)redPanGesture:(UIPanGestureRecognizer *)pan{
-    NSLog(@"redPanGesture");
 }
 
 - (UIRedView *)redView {
