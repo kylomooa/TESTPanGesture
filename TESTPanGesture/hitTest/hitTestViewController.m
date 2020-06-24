@@ -41,7 +41,7 @@
 //touchesBegan会在hitTest之后调用
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    NSLog(@"CustomView touchesBegan");
+    NSLog(@"superView touchesBegan 在hitTest之后调用");
 }
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
@@ -63,8 +63,15 @@
 
         CGPoint subPoint = [subView convertPoint:point fromView:self];
         
+        if ([subView isKindOfClass:[UIRedView class]]) {
+            return [subView hitTest:subPoint withEvent:event];;
+        }
+        
         //如果子view有一个存在该响应事件，则返回子view
-        return [subView hitTest:subPoint withEvent:event];
+        UIView *view = [subView hitTest:subPoint withEvent:event];
+        if (view) {
+            return view;
+        }
     }
     
     //如果子view都不存在该响应事件，则返回自己
@@ -101,7 +108,6 @@
 
     [self.view addSubview:self.redView];
     [self.view addSubview:self.blueView];
-//    [self.view bringSubviewToFront:self.redView];
 
 }
 
@@ -118,6 +124,7 @@
     if (!_blueView) {
         _blueView = [[UIView alloc] initWithFrame:self.view.bounds];
         _blueView.backgroundColor = [UIColor blueColor];
+        _blueView.userInteractionEnabled = NO;
     }
     return _blueView;
 }
