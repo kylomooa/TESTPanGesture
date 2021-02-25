@@ -18,6 +18,7 @@
 		CF95C8B524797ACE00A96993 /* bezierPathHiteTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8B424797ACE00A96993 /* bezierPathHiteTestViewController.m */; };
 		CF95C8B8247980E800A96993 /* panGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8B7247980E800A96993 /* panGestureViewController.m */; };
 		CF95C8BE247981AF00A96993 /* panGestureLayerAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF95C8BD247981AF00A96993 /* panGestureLayerAnimationView.m */; };
+		CFA4269A24C6EE3A00575F2D /* panGestureViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA4269924C6EE3A00575F2D /* panGestureViewControllerDemo.m */; };
 		CFADBBCC247A1010008D3A11 /* progressControlAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFADBBCB247A1010008D3A11 /* progressControlAnimationView.m */; };
 		CFADBBCF247A493E008D3A11 /* pauseAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFADBBCE247A493E008D3A11 /* pauseAnimationView.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,8 @@
 		CF95C8B7247980E800A96993 /* panGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = panGestureViewController.m; sourceTree = "<group>"; };
 		CF95C8BC247981AF00A96993 /* panGestureLayerAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = panGestureLayerAnimationView.h; path = TESTPanGesture/panGestureLayerAnimationView.h; sourceTree = SOURCE_ROOT; };
 		CF95C8BD247981AF00A96993 /* panGestureLayerAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = panGestureLayerAnimationView.m; path = TESTPanGesture/panGestureLayerAnimationView.m; sourceTree = SOURCE_ROOT; };
+		CFA4269824C6EE3A00575F2D /* panGestureViewControllerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = panGestureViewControllerDemo.h; sourceTree = "<group>"; };
+		CFA4269924C6EE3A00575F2D /* panGestureViewControllerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = panGestureViewControllerDemo.m; sourceTree = "<group>"; };
 		CFADBBCA247A1010008D3A11 /* progressControlAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = progressControlAnimationView.h; sourceTree = "<group>"; };
 		CFADBBCB247A1010008D3A11 /* progressControlAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = progressControlAnimationView.m; sourceTree = "<group>"; };
 		CFADBBCD247A493E008D3A11 /* pauseAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pauseAnimationView.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				CFADBBCB247A1010008D3A11 /* progressControlAnimationView.m */,
 				CFADBBCD247A493E008D3A11 /* pauseAnimationView.h */,
 				CFADBBCE247A493E008D3A11 /* pauseAnimationView.m */,
+				CFA4269824C6EE3A00575F2D /* panGestureViewControllerDemo.h */,
+				CFA4269924C6EE3A00575F2D /* panGestureViewControllerDemo.m */,
 			);
 			path = panGestureTest;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				CF95C8B22479795600A96993 /* hitTestViewController.m in Sources */,
 				CF2CFFF2246E9678004944D9 /* AppDelegate.m in Sources */,
 				CFADBBCF247A493E008D3A11 /* pauseAnimationView.m in Sources */,
+				CFA4269A24C6EE3A00575F2D /* panGestureViewControllerDemo.m in Sources */,
 				CF95C8BE247981AF00A96993 /* panGestureLayerAnimationView.m in Sources */,
 				CFADBBCC247A1010008D3A11 /* progressControlAnimationView.m in Sources */,
 				CF2C0003246E967B004944D9 /* main.m in Sources */,

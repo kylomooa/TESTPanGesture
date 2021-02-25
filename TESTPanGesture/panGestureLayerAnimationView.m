@@ -151,7 +151,7 @@
     if (nil == _animationView) {
         
         _animationView = [[UIView alloc]initWithFrame:CGRectMake(0, screenH-animationViewH*0.5 , screenW, animationViewH)];
-        _animationView.backgroundColor = [UIColor redColor];
+        _animationView.backgroundColor = [UIColor whiteColor];
     }
     return _animationView;
 }

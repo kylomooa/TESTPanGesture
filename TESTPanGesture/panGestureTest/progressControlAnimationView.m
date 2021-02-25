@@ -162,7 +162,7 @@ begin - beginTime
     
     //移除动画
     [self.animationView.layer removeAllAnimations];
-    
+
     //虽然移除了动画，但是动画block代码仍旧会执行，所以需要还原view frame
     self.animationView.frame = self.animationBeforeFrame;
 }
@@ -177,7 +177,7 @@ begin - beginTime
     if (nil == _animationView) {
         
         _animationView = [[UIView alloc]initWithFrame:CGRectMake(0, screenH-animationViewShowH , screenW, animationViewH)];
-        _animationView.backgroundColor = [UIColor redColor];
+        _animationView.backgroundColor = [UIColor whiteColor];
     }
     return _animationView;
 }
